@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="author" content="Andrés Martin" />
+        <title>Portafolio | Andrés Martin</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+        <style>
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+		
+            :root{
+				--bs-body-font-family: 'Noto Sans', sans-serif;         
+            }
+            [data-bs-theme="light"] { 
+				--bs-body-bg: #f0f0f0;
+				--bs-link-color-rgb:  104, 31, 225 ;
+				--bs-link-hover-color-rgb: 62, 22, 130;
+                /* PENDIENTE */
+            }
+            
+            [data-bs-theme="dark"] { 
+				--bs-body-bg:  #33324c; 
+				--bs-link-color-rgb:   172, 127, 246 ;
+				--bs-link-hover-color-rgb:  213, 200, 233 ;
+                /* PENDIENTE */
+            }
+            
+            .bd-mode-toggle { 
+                z-index: 1500; 
+            }
+            
+            #frase {
+                background: #e6edd0 url("https://upload.wikimedia.org/wikipedia/commons/1/1a/Abstract-background-white-12.jpg") center center no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body class="overflow-x-hidden">
+        <!--acá deben agregar más símbolos-->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check2" viewBox="0 0 16 16">
+                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+            </symbol>
+            <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                />
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                />
+            </symbol>
+            <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+            </symbol>
+            <symbol id="emoji" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+            </symbol>
+        </svg>
+        <!--acá el cambio de themes-->
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+            <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center bg-dark shadow-sm" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                <svg class="bi my-1 theme-icon-active" fill="gray" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                <li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false"><svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>Light<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg></button></li>
+                <li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false"><svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>Dark<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg></button></li>
+            </ul>
+        </div>    
+        <!--acá el encabezado que se esconde/depliega con un clic del menú-->
+        <header data-bs-theme="dark">
+            <div class="collapse text-bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4>Sobre mi</h4>
+                            <p class="text-body-secondary">
+                                Estoy en cuarto año de Diseño en la Universidad de Chile, y me interesan los proyectos sobre entretenimiento y tecnología. Si requieres de mis servicios, o quieres hablar de diseño te dejo mis vías de contacto. 
+                            </p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4>Contáctame</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="mailto:andres.a.martin.m@gmail.com">andres.a.martin.m@gmail.com</a></li>
+                                <li><a href="https://www.instagram.com/andresmartin_elmartin/" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                                            />
+                                        </svg>
+                                        @andresmartin_elmartin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">Andrés Martin</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!--acá está lo principal-->
+        <main id="alla">
+            <!--una sección para la frase-->
+            <section class="py-5" id="frase">
+                <div class="container">
+                    <div class="row">
+                        <div class="col py-5">
+                            <p class="text-center display-6 p-1 text-black">Mi corazón es de los detalles.<br> Siempre encuentro que son más importantes que la imagen completa. <p class="text-center blockquote-footer">Dieter Rams</p></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--una sección para las ventajas competitivas-->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-4">
+                            <h2 class="h4 fw-bolder"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+</svg> Creatividad</h2>
+                            <p>Crear propuestas innovadoras, estados de significación y valor, para formas, código, lenguajes y fenómenos comunicacionales y relacionales, entre la ciudadanía, las comunidades, las personas y sus contextos.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h2 class="h4 fw-bolder"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+</svg> Capacidad de Gestión</h2>
+                            <p>Gestionar sistemas productivos y talentos propios y de otros, articulando procesos, recursos y agentes relacionados con la industria, las organizaciones sociales y la gobernabilidad.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h2 class="h4 fw-bolder"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+</svg> Sistematización</h2>
+                            <p>Sistematizar experiencia de la disciplinar o profesión, produciendo, representando, transfiriendo y preservado conocimientos y vinculándolas con otros saberes, para identificar necesidades y generar soluciones de diseño.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--una sección para el portafolio-->
+            <section class="py-5 bg-body-tertiary">
+                <div class="container" id="alla">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-3 g-3" id="aca"></div>
+                </div>
+            </section>
+        </main>
+        <!--un pie de página-->
+        <footer class="py-4 bg-dark text-light">
+            <div class="container px-5"><p class="text-center small">Andrés Martin &copy; 2023</p></div>
+        </footer>
+        <!--algo de JS-->
+        <script>
+            const data = [
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%206.png", "https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/5khw4Q.png", "https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/noM0XA.png"],
+                    title: "Videojuegos | 2021-2022",
+                    text: "<p>Cubo: Pequeña experiencia interactiva creada para el curso de herramientas computacionales de la universidad, en el que se nos pidió que como mínimo hicieramos una imagen con un cubo en 3d, y que abordé como un proyecto un poco más complejo.<br>Luz Protectora: Juego creado para la FAU Jam #1, en el que exploramos la paternidad y la perdida.<a href='https://andresmartin.itch.io/'>https://andresmartin.itch.io/</a></p>",
+                },
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%202.png"],
+                    title: "Codice | 2021",
+                    text: "<p>Codice es la respuesta que dimos junto a dos compañeros a la falta de integración de las distintas identidades de nuestro país, especificamente en la etapa escolar básica, y planteamos un servicio que conectara a 2 cursos de distintas partes de Chile a través del intercambio de objetos.</p>",
+                },
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%201.png", "https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/02.jpg", "https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/01.jpg"],
+                    title: "Organillo Digital | 2022",
+                    text: "<p>  Descripción del instrumento:<br>* Disco ubicado en la rueda de la bicicleta, conectado a la placa Adafruit CP Bluefruit<br>* Mediante el pedaleo de la bicicleta suena una melodía acorde a la velocidad de rotación y con frecuencias (80 y 1000 hertz) correspondientes al voltaje que pasa por el puente de grafito (puede ser desde los 0.3 a los 3.3 volts)<br>* Solo suena cuando hace contacto con el puente <br><br>  Gestualidad:<br>* Pedalear (la bicicleta)<br>En su defecto hacer girar la rueda con el disco de forma manual en cualquier sentido (en el caso de usarlo en la bicicleta dependiendo del lado la rueda que se ponga, la melodía va a sonar en un sentido o en el otro)* Gira en torno a la rueda<br>* Rayar el disco con lápiz grafito por detrás para ajustar la frecuencia deseada (entre uniones de cobre)</p>",
+                },
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%203.png", "https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%205.png", "https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%204.png"],
+                    title: "Comedero de Abejorros | 2022",
+                    text: "<p>Diseñé un dispositivo destinado a favorecer a la fauna y flora local, dando cobijo y alimento a abejorros y otros insectos. El producto se fabrica a partir de un biomaterial desarrollado especificamente para él.</p>",
+                },
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%207.png"],
+                    title: "Real Witch Studio | 2023",
+                    text: "<p>Junto a 2 compañeras de Diseño abrimos un estudio de animación para la realización de piezas audiovisuales cortas que serán presentadas en Proyecto VII. La pieza que está a continuación se realizó en motiongraphics con la ayuda de el software AfterEffects.<a href='https://drive.google.com/file/d/1HdQPjdsHXKjEnSxRMYcUaM9T4OyqkAHO/view?usp=share_link'>Video MotionGraphics</a></p>",
+                },
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%208.png"],
+                    title: "Logos | 2020-2023",
+                    text: "<p>He realizado logos y piezas gráficas para distintas empresas, últimamente a negocios relacionados a la comida, como la panadería Becaso o el Restorán la Oficina. También he realizado el branding de empresas ficticias con motivo de experimentar y prácticar con mis habilidades.</p>",
+                },
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%2010.png"],
+                    title: "Trouble Machine | 2022",
+                    text: "<p>Junto a un gran equipo diseñamos un juego de mesa para el ramo de Gamificación, con el objetivo de, a través del juego, desbloquear la creatividad de los participantes. En el juego los jugadores tienen que simular un proceso creativo personal que luego se va a ir intercambiando, a la manera de un cadáver exquisito, en el que primero se plantea un problema y a continuación se debe resolver pasando por distintas etapas.</p>",
+                },
+                {
+                    img: ["https://raw.githubusercontent.com/AndresMartinM/Prueba02-frontend/main/img/Artboard%209.png"],
+                    title: "Investigaciones Juegos | 2022-2023",
+                    text: "<p>He ralizado 2 investigaciones sobre el diseño de juegos de mesa, estudiando su mercado, sus usuarios y su escenario social, además de sus mecánicas, dinámicas y estéticas. También actualmente estoy realizando una investigacion sobre la fabricación de juguetes y sus implicancias tecnológicas.</p>",
+                },
+            ];
+            const donde = document.querySelector("#aca");
+            data.forEach((x, i) => {
+                donde.innerHTML += '<div class="col"><div class="card h-100 shadow-sm bg-light-subtle border-0"><img class="card-img-top" src="' + x.img[0] + '"><div class="card-body"><p class="card-title"><a href="#" onclick = "detalle(' + i +
+                    ')" class="text-decoration-none">' + x.title + "</a></p></div></div></div>";
+            });
+            const dondemas = document.querySelector("#alla");
+            function detalle(nro) {
+                let fotos = "";
+                data[nro].img.forEach((f) => {
+                    fotos += '<img class="w-100 my-3 rounded" src="' + f + '">';
+                });
+                dondemas.innerHTML = '<section class="bg-body-tertiary"><div class="container pb-5"><div class="row"><div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto"><h1 class="display-6 mt-5"><button type="button" class="btn btn-sm btn-outline-secondary shadow-sm mb-2 me-3 fw-bold" onClick="window.location.reload()">&larr; VOLVER</button> ' + data[nro].title + '</h1> <figure class="mb-2">' + fotos + '</figure>' + data[nro].text + '</div></div></div></section>';
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>  
+    </body>
+</html>
